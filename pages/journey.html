@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Journey | Norqhalif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/journey.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<nav class="navbar">
+
+    <a href="../index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="journey-header">
+
+    <span class="page-tag">
+        My Story So Far
+    </span>
+
+    <h1>My Journey</h1>
+
+    <p>
+        Every experience, challenge, achievement and opportunity
+        has contributed to the person I am today. This timeline
+        highlights some of the milestones that shaped my journey.
+    </p>
+
+</section>
+
+<div class="timeline-line"></div>
+
+<div class="timeline-item left">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2020</span>
+<h2>Started at SBP Kepala Batas</h2>
+<p>
+Beginning of a journey filled with learning,
+leadership, sports and self-discovery.
+</p>
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2021 - 2023</span>
+<h2>Growth & Development</h2>
+<p>
+Actively involved in student organisations,
+media teams, competitions and co-curricular activities.
+</p>
+</div>
+</div>
+
+<div class="timeline-item left">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2024</span>
+<h2>Gold Award Gamelan Competition</h2>
+<p>
+Received Gold Award in Pertandingan Muzik Gamelan Melayu
+dan Caklempong SBP after months of preparation.
+</p>
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2025</span>
+<h2>Graduated SPM</h2>
+<p>
+Successfully completed secondary education
+at SBP Kepala Batas and achieved 6A in SPM.
+</p>
+</div>
+</div>
+
+<div class="timeline-item left">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2025</span>
+<h2>Entered UPSI</h2>
+<p>
+Started Diploma in Computer Science at
+Universiti Pendidikan Sultan Idris.
+</p>
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2025</span>
+<h2>President of Computer Science Association</h2>
+<p>
+Led student programmes, activities and
+community initiatives for Computer Science students.
+</p>
+</div>
+</div>
+
+<div class="timeline-item left">
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+<span class="year">2026</span>
+<h2>International Youth Exchange Selection Camp</h2>
+<p>
+Selected among thousands of applicants to
+participate in the national selection camp.
+</p>
+</div>
+</div>
+
+</section>
+
+<footer class="page-footer">
+
+<h3>NORQHALIF</h3>
+
+<p>
+Still writing the next chapter...
+</p>
+
+</footer>
+
+<script src="../assets/js/timeline.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>

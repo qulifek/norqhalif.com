@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Achievements | Norqhalif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/achievements.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<nav class="navbar">
+
+    <a href="../index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="achievement-header">
+
+<span class="section-tag">
+Milestones & Leadership
+</span>
+
+<h1>
+Achievements
+</h1>
+
+<p>
+Experiences, recognitions and leadership opportunities
+that have shaped my personal and professional growth.
+</p>
+
+</section>
+
+<div class="achievement-grid">
+
+<!-- Youth Exchange -->
+
+<div class="achievement-card">
+
+<div class="achievement-image">
+<img src="../assets/images/achievements/youth-exchange.jpg" alt="">
+</div>
+
+<div class="achievement-content">
+
+<span class="achievement-year">2026</span>
+
+<h2>
+International Youth Exchange Program Selection Camp
+</h2>
+
+<p>
+Selected among approximately 18,000 applicants to advance
+into the national selection camp with only around 140 participants.
+
+This experience strengthened my confidence, communication,
+leadership potential and global perspective.
+</p>
+
+</div>
+
+</div>
+
+<!-- President -->
+
+<div class="achievement-card">
+
+<div class="achievement-image">
+<img src="../assets/images/achievements/president.jpg" alt="">
+</div>
+
+<div class="achievement-content">
+
+<span class="achievement-year">2025 / 2026</span>
+
+<h2>
+President of Computer Science Association
+</h2>
+
+<p>
+Leading academic, professional and community-focused programmes
+for Computer Science students while coordinating committees,
+activities and student engagement initiatives.
+</p>
+
+</div>
+
+</div>
+
+<!-- Margamas -->
+
+<div class="achievement-card">
+
+<div class="achievement-image">
+<img src="../assets/images/achievements/margamas.jpg" alt="">
+</div>
+
+<div class="achievement-content">
+
+<span class="achievement-year">2025 / 2026</span>
+
+<h2>
+Technical Executive Committee
+</h2>
+
+<h3>Margamas Gamelan Club UPSI</h3>
+
+<p>
+Responsible for technical operations during club programmes,
+including equipment preparation, sound systems, stage setup
+and technical support.
+</p>
+
+</div>
+
+</div>
+
+<!-- Rakan Millenia -->
+
+<div class="achievement-card">
+
+<div class="achievement-image">
+<img src="../assets/images/achievements/rakan-millenia.jpg" alt="">
+</div>
+
+<div class="achievement-content">
+
+<span class="achievement-year">2025 / Present</span>
+
+<h2>
+Media Executive Committee Member
+</h2>
+
+<h3>Rakan Millenia UPSI</h3>
+
+<p>
+Contributed to event documentation, photography, videography,
+social media content and promotional materials for university
+volunteer programmes under BHEP.
+
+Actively involved in documenting Minggu Intelektual dan
+Interaksi Anak Kandung Suluh Budiman for new students.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gamelan -->
+
+<div class="achievement-card">
+
+<div class="achievement-image">
+<img src="../assets/images/achievements/gamelan.jpg" alt="">
+</div>
+
+<div class="achievement-content">
+
+<span class="achievement-year">2024</span>
+
+<h2>
+Gold Award
+</h2>
+
+<h3>
+Pertandingan Muzik Gamelan Melayu &
+Caklempong SBP 2024
+</h3>
+
+<p>
+Received Gold Award after months of training,
+team coordination and performance preparation.
+
+This achievement reflects dedication, discipline,
+collaboration and appreciation for Malaysian
+traditional performing arts.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="recognition-section">
+
+    <div class="recognition-card">
+
+        <span class="section-tag">
+            Recognition Summary
+        </span>
+
+        <h2>
+            Building Leadership Through Experience
+        </h2>
+
+        <p>
+            My achievements reflect more than awards alone.
+            They represent years of involvement in leadership,
+            volunteerism, technical responsibilities, creative
+            projects and personal development. Every role has
+            contributed valuable skills in communication,
+            teamwork, organisation and problem solving.
+        </p>
+
+    </div>
+
+</section>
+
+<footer class="page-footer">
+
+<h3>NORQHALIF</h3>
+
+<p>
+Every achievement starts with a willingness to try.
+</p>
+
+</footer>
+
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>

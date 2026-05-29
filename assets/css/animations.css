@@ -1,0 +1,103 @@
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(50px);
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+@keyframes float{
+
+0%,100%{
+transform:
+translateY(0);
+}
+
+50%{
+transform:
+translateY(-15px);
+}
+
+}
+
+@keyframes pulse{
+
+0%,100%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+}
+
+.reveal{
+  opacity:0;
+  transform: translateY(40px);
+  filter: blur(10px);
+  transition: all .9s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.active{
+  opacity:1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.float{
+animation:
+float 5s ease-in-out infinite;
+}
+
+.pulse{
+animation:
+pulse 2s infinite;
+}
+
+.top-btn{
+
+position:fixed;
+
+bottom:30px;
+right:30px;
+
+width:55px;
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+cursor:pointer;
+
+background:var(--accent);
+
+font-size:1.2rem;
+
+z-index:999;
+}

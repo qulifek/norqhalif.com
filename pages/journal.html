@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Journal | Norqhalif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/journal.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<nav class="navbar">
+
+    <a href="../index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="journal.html" class="active">Journal</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="journal-header">
+
+    <span class="section-tag">
+        Thoughts • Experiences • Reflections
+    </span>
+
+    <h1>My Journal</h1>
+
+    <p>
+        A collection of stories, lessons and reflections gathered
+        through leadership, university life, volunteering and
+        personal growth.
+    </p>
+
+</section>
+
+<section class="featured-journal">
+
+    <div class="featured-content">
+
+        <span class="journal-tag" id="featuredCategory">
+            Featured Reflection
+        </span>
+
+        <h2 id="featuredTitle">
+            Loading Featured Reflection...
+        </h2>
+
+        <p id="featuredExcerpt">
+            Please wait while the latest journal entry is being loaded.
+        </p>
+
+        <div class="journal-meta" id="featuredMeta">
+            Journal Entry
+        </div>
+
+        <a href="#" class="read-article" id="featuredReadBtn" data-article="">
+            Read Reflection →
+        </a>
+
+    </div>
+
+</section>
+
+<section class="search-section">
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search journal entries...">
+
+</section>
+
+<section class="journal-grid" id="journalGrid">
+
+    <p class="journal-loading">
+        Loading journal entries...
+    </p>
+
+</section>
+
+<p class="no-results" id="noResults">
+    No journal entries found.
+</p>
+
+<section class="reflection-section">
+
+    <div class="reflection-card">
+
+        <h2>
+            "Every experience carries a lesson,
+            if we are willing to learn from it."
+        </h2>
+
+        <p>
+            My journal serves as a personal archive of lessons,
+            experiences and moments that continue to shape
+            my journey.
+        </p>
+
+    </div>
+
+</section>
+
+<div class="article-modal" id="articleModal">
+
+    <div class="article-modal-content">
+
+        <button class="article-close" id="articleClose">
+            &times;
+        </button>
+
+        <span class="article-category" id="articleCategory">
+            Journal
+        </span>
+
+        <h2 id="articleTitle">
+            Article Title
+        </h2>
+
+        <div class="article-meta" id="articleMeta">
+            Journal Entry
+        </div>
+
+        <div class="article-body" id="articleBody">
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="page-footer">
+
+    <h3>NORQHALIF</h3>
+
+    <p>
+        Every experience carries a lesson worth sharing.
+    </p>
+
+</footer>
+
+<script type="module" src="../assets/js/journal.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>

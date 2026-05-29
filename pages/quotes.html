@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quotes & Lessons | Norqhalif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/quotes.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<nav class="navbar">
+
+    <a href="../index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="quotes.html" class="active">Quotes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="quotes-header">
+
+    <span class="section-tag">
+        Reflections • Wisdom • Growth
+    </span>
+
+    <h1>Quotes & Lessons</h1>
+
+    <p>
+        A collection of personal principles, reflections and lessons
+        that continue to guide my growth, leadership and journey.
+    </p>
+
+</section>
+
+<section class="featured-quote">
+
+    <div class="quote-mark">
+        “
+    </div>
+
+    <blockquote id="featuredQuote">
+        The version of yourself you dream of becoming
+        is built by the habits you practise every day.
+    </blockquote>
+
+    <span id="featuredQuoteAuthor">
+        — Norqhalif
+    </span>
+
+</section>
+
+<section class="principles-section">
+
+    <h2>Personal Principles</h2>
+
+    <p class="section-description">
+        These are the values I try to carry through my academic,
+        leadership and personal journey.
+    </p>
+
+    <div class="principles-grid">
+
+        <div class="principle-card">
+
+            <span>01</span>
+
+            <h3>Lead With Responsibility</h3>
+
+            <p>
+                Leadership is not about being above others.
+                It is about carrying responsibility, making decisions
+                and helping people grow together.
+            </p>
+
+        </div>
+
+        <div class="principle-card">
+
+            <span>02</span>
+
+            <h3>Serve With Sincerity</h3>
+
+            <p>
+                The smallest act of service can create meaningful impact.
+                Giving back teaches humility, empathy and gratitude.
+            </p>
+
+        </div>
+
+        <div class="principle-card">
+
+            <span>03</span>
+
+            <h3>Stay Curious</h3>
+
+            <p>
+                Technology changes constantly, but curiosity keeps us
+                learning, adapting and improving with every challenge.
+            </p>
+
+        </div>
+
+        <div class="principle-card">
+
+            <span>04</span>
+
+            <h3>Grow Through Discomfort</h3>
+
+            <p>
+                Comfort may feel safe, but growth often begins when
+                we step into challenges we once feared.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quote-collection">
+
+    <h2>Favourite Reflections</h2>
+
+    <div class="quote-list" id="quoteList">
+
+        <p class="quote-loading">
+            Loading quotes...
+        </p>
+
+    </div>
+
+</section>
+
+<section class="closing-reflection">
+
+    <div class="closing-card">
+
+        <span class="section-tag">
+            Final Reflection
+        </span>
+
+        <h2>
+            Learn. Reflect. Improve. Repeat.
+        </h2>
+
+        <p>
+            Every experience becomes meaningful when we take time
+            to reflect on what it teaches us. These lessons remind me
+            to keep moving forward with purpose, humility and consistency.
+        </p>
+
+    </div>
+
+</section>
+
+<footer class="page-footer">
+
+    <h3>NORQHALIF</h3>
+
+    <p>
+        Learn. Reflect. Improve. Repeat.
+    </p>
+
+</footer>
+
+<script type="module" src="../assets/js/quotes.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>

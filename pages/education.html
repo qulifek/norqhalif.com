@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Education | Norqhalif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/education.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<nav class="navbar">
+
+    <a href="../index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- HEADER -->
+
+<section class="education-header">
+
+    <span class="page-tag">
+        Academic Background
+    </span>
+
+    <h1>Education</h1>
+
+    <p>
+        My educational journey has provided the foundation
+        for my growth in technology, leadership, creativity
+        and lifelong learning.
+    </p>
+
+</section>
+
+<!-- SBP -->
+
+<section class="education-card">
+
+    <div class="education-image">
+
+        <img
+        src="../assets/images/education/sbp.jpg"
+        alt="SBP Kepala Batas">
+
+    </div>
+
+    <div class="education-content">
+
+        <span class="education-year">
+            2020 – 2025
+        </span>
+
+        <h2>
+            Sekolah Menengah Sains Kepala Batas
+        </h2>
+
+        <h3>
+            SPM Result: 6A
+        </h3>
+
+        <p>
+            My secondary school journey was where I discovered my
+            passion for leadership, teamwork, multimedia and
+            co-curricular excellence.
+        </p>
+
+        <p>
+            Throughout my time at SM Sains Kepala Batas, I actively
+            participated in student organisations, event management,
+            media production and sports activities. These experiences
+            helped develop communication skills, discipline and
+            confidence while preparing me for future leadership roles.
+        </p>
+
+        <div class="tags">
+
+            <span>Leadership</span>
+            <span>Media Team</span>
+            <span>Sports</span>
+            <span>Event Management</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UPSI -->
+
+<section class="education-card reverse">
+
+    <div class="education-image">
+
+        <img
+        src="../assets/images/education/upsi.jpg"
+        alt="UPSI">
+
+    </div>
+
+    <div class="education-content">
+
+        <span class="education-year">
+            2025 – Present
+        </span>
+
+        <h2>
+            Universiti Pendidikan Sultan Idris
+        </h2>
+
+        <h3>
+            Diploma in Computer Science
+        </h3>
+
+        <div class="cgpa-box">
+
+            <h4>Current CGPA</h4>
+
+            <span>3.70</span>
+
+        </div>
+
+        <p>
+            Currently pursuing a Diploma in Computer Science with
+            strong interest in software development, web technologies
+            and digital innovation.
+        </p>
+
+        <p>
+            Beyond academics, I actively engage in student leadership,
+            volunteer programmes and technical committees to further
+            develop organisational, communication and professional
+            skills while contributing to the university community.
+        </p>
+
+        <div class="tags">
+
+            <span>Programming</span>
+            <span>Web Development</span>
+            <span>Leadership</span>
+            <span>Volunteerism</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS DEVELOPED -->
+
+<section class="skills-developed">
+
+    <h2>
+        Skills Developed Through Education
+    </h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h3>Problem Solving</h3>
+
+            <p>
+                Developing analytical thinking through
+                academic challenges and technical projects.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Leadership</h3>
+
+            <p>
+                Organising programmes, managing teams
+                and representing student communities.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Communication</h3>
+
+            <p>
+                Public speaking, teamwork and collaborative
+                project experiences.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Technical Skills</h3>
+
+            <p>
+                Programming, web development,
+                multimedia production and digital tools.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="page-footer">
+
+    <h3>NORQHALIF</h3>
+
+    <p>
+        Learning today, leading tomorrow.
+    </p>
+
+</footer>
+
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>

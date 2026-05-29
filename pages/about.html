@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Norqhalif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/about.css">
+
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+
+<nav class="navbar">
+
+    <a href="../index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="about-hero">
+
+    <div class="profile-card">
+
+        <img
+        src="../assets/images/profile/profile.jpeg"
+        alt="Norqhalif">
+
+    </div>
+
+    <div class="about-content">
+
+        <span class="tag">
+            MOHAMAD NORQHALIF BIN MOHD NORZAIMIE
+        </span>
+
+        <h1>
+Hello, I'm
+<span class="accent">Norqhalif</span>
+</h1>
+
+        <p class="intro">
+            A passionate Information Technology student driven by creativity,
+            leadership and continuous growth. I enjoy combining technology,
+            digital media and community engagement to create meaningful
+            experiences while inspiring others around me.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="../assets/files/NORQHALIF_CV.pdf" class="btn-primary" download>
+                Download CV
+            </a>
+
+            <a href="contact.html" class="btn-secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats-section">
+
+    <div class="stat-box">
+        <h2>3.7+</h2>
+        <p>Current CGPA</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>10+</h2>
+        <p>Leadership Roles</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100+</h2>
+        <p>Volunteer Hours</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>5+</h2>
+        <p>Technical Projects</p>
+    </div>
+
+</section>
+
+<section class="about-section">
+
+    <h2>Professional Summary</h2>
+
+    <div class="glass-panel">
+
+        <p>
+            I am currently pursuing a Diploma in Computer Science at
+            Universiti Pendidikan Sultan Idris (UPSI), with strong interests
+            in software development, creative media and student leadership.
+        </p>
+
+        <br>
+
+        <p>
+            Throughout my academic journey, I have actively participated in
+            leadership positions, volunteer programmes, technical committees
+            and independent projects that strengthened my communication,
+            teamwork, organisational and problem-solving abilities.
+        </p>
+
+        <br>
+
+        <p>
+            I am passionate about continuous self-development and aspire to
+            gain international exposure through youth exchange programmes
+            while contributing meaningfully to technological innovation,
+            youth empowerment and community growth.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="skills-section">
+
+    <h2>Skills & Expertise</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Firebase</div>
+
+        <div class="skill">Leadership</div>
+        <div class="skill">Public Speaking</div>
+        <div class="skill">Team Management</div>
+        <div class="skill">Event Planning</div>
+
+        <div class="skill">Photography</div>
+        <div class="skill">Videography</div>
+        <div class="skill">Graphic Design</div>
+        <div class="skill">Content Creation</div>
+        <div class="skill">Video Editing</div>
+
+
+    </div>
+
+</section>
+
+<section class="roles-section">
+
+    <h2>Current Roles</h2>
+
+    <div class="roles-grid">
+
+        <div class="role-card">
+
+            <h3>
+                President
+            </h3>
+
+            <h4>
+                Computer Science Association UPSI
+            </h4>
+
+            <p>
+                Leading student activities, academic programmes,
+                community projects and organisational development.
+            </p>
+
+        </div>
+
+        <div class="role-card">
+
+            <h3>
+                Technical Executive Committee
+            </h3>
+
+            <h4>
+                Margamas Gamelan Club UPSI
+            </h4>
+
+            <p>
+                Managing technical operations, event setup,
+                equipment preparation and technical support.
+            </p>
+
+        </div>
+
+        <div class="role-card">
+
+            <h3>
+                Media Executive Committee
+            </h3>
+
+            <h4>
+                Rakan Millenia UPSI
+            </h4>
+
+            <p>
+                Producing media content, documenting programmes,
+                supporting communication and volunteer initiatives.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="page-footer">
+
+    <h3>NORQHALIF</h3>
+
+    <p>
+        Building technology, creating experiences,
+        inspiring communities.
+    </p>
+
+</footer>
+
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>

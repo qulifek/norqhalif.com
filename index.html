@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Norqhalif | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<div class="bg-gradient"></div>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+        HOME
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/journey.html">Journey</a></li>
+        <li><a href="pages/education.html">Education</a></li>
+        <li><a href="pages/achievements.html">Achievements</a></li>
+        <li><a href="pages/journal.html">Journal</a></li>
+        <li><a href="pages/goals.html">Goals</a></li>
+        <li><a href="pages/quotes.html">Quotes</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            DIGITAL PORTFOLIO
+        </span>
+
+        <h1>
+            MY DIGITAL<br>
+            <span class="accent">DOCUMENTATION</span>
+        </h1>
+
+        <p class="description">
+            Documenting my journey through technology, leadership,
+            creativity, volunteering, and lifelong learning.
+            A collection of experiences, achievements, projects,
+            and meaningful moments that continue shaping who I am.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="pages/about.html" class="btn-primary">
+                Explore My Journey
+            </a>
+
+            <a href="pages/contact.html" class="btn-secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h3>Technology</h3>
+        <p>
+            Software development, web development and digital innovation.
+        </p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Leadership</h3>
+        <p>
+            Organising programmes, managing teams and empowering students.
+        </p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Creativity</h3>
+        <p>
+            Photography, videography, graphic design and media production.
+        </p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Community</h3>
+        <p>
+            Volunteering, youth development and social impact initiatives.
+        </p>
+    </div>
+
+</section>
+
+<!-- FEATURED -->
+
+<section class="featured">
+
+    <h2>Explore My Portfolio</h2>
+
+    <p class="section-subtitle">
+        Explore the experiences, achievements, reflections, and goals that shape my growth in technology, leadership, and personal development.
+    </p>
+
+    <div class="featured-grid">
+
+        <a href="pages/achievements.html" class="feature-card">
+
+            <h3>Achievements</h3>
+
+            <p>
+                Leadership roles, awards, recognitions, and milestones that reflect my growth throughout my academic and personal journey.
+            </p>
+
+        </a>
+
+        <a href="pages/journey.html" class="feature-card">
+
+            <h3>Journey</h3>
+
+            <p>
+                A timeline of meaningful experiences, challenges, and moments that have shaped who I am becoming.
+            </p>
+
+        </a>
+
+        <a href="pages/journal.html" class="feature-card">
+
+            <h3>Journal</h3>
+
+            <p>
+                Personal reflections, lessons, and stories documenting my continuous growth, leadership, and learning journey.
+            </p>
+
+        </a>
+
+        <a href="pages/goals.html" class="feature-card">
+
+            <h3>Goals</h3>
+
+            <p>
+                Future ambitions, personal missions, and milestones I am working towards through discipline, learning, and perseverance.
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- QUOTE -->
+
+<section class="quote-section">
+
+    <div class="quote-card">
+
+        <h2>
+            “Growth begins where comfort ends.”
+        </h2>
+
+        <p>
+            Every challenge is an opportunity to learn,
+            improve and become a better version of ourselves.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>NORQHALIF</h2>
+
+    <p>
+        Building technology, creating experiences,
+        and inspiring communities.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="pages/about.html">About</a>
+        <a href="pages/journey.html">Journey</a>
+        <a href="pages/journal.html">Journal</a>
+        <a href="pages/contact.html">Contact</a>
+
+    </div>
+
+    <small>
+        © 2026 Norqhalif. All rights reserved.
+    </small>
+
+</footer>
+
+<div class="cursor-glow"></div>
+
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuButton.innerHTML = "×";
+    }else{
+        menuButton.innerHTML = "☰";
+    }
+}
+</script>
+
+</body>
+</html>
